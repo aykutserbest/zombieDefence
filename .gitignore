@@ -75,3 +75,9 @@ crashlytics-build.properties
 
 # Other Files
 *.log
+Assets/GameCore/Model/Zombies/BaseZombie/Zombie Running.fbx.meta
+Assets/GameCore/Model/Zombies/BaseZombie/Zombie Running.fbx
+Assets/GameCore/Model/Zombies/BaseZombie/Zombie Idle.fbx.meta
+Assets/GameCore/Model/Zombies/BaseZombie/Zombie Idle.fbx
+Assets/GameCore/Model/Zombies/BaseZombie/Ch10_nonPBR@Zombie Attack.fbx.meta
+Assets/GameCore/Model/Zombies/BaseZombie/Ch10_nonPBR@Zombie Attack.fbx

@@ -12247,7 +12247,7 @@ PrefabInstance:
     - target: {fileID: 1163532094330173362, guid: 6fa9afa6bfb06014886dd2024fb0d3df, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1416871030}
     - target: {fileID: 1163532094330173363, guid: 6fa9afa6bfb06014886dd2024fb0d3df, type: 3}
       propertyPath: m_StoppingDistance
       value: 2
@@ -18600,7 +18600,7 @@ PrefabInstance:
     - target: {fileID: 1163532094330173362, guid: 6fa9afa6bfb06014886dd2024fb0d3df, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1416871030}
     - target: {fileID: 1163532094330173363, guid: 6fa9afa6bfb06014886dd2024fb0d3df, type: 3}
       propertyPath: m_StoppingDistance
       value: 2

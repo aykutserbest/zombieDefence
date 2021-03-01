@@ -14,6 +14,9 @@ namespace ZombieDefence.Basics
         public Weapon _weapon;
         public bool isReload;
         
+        [SerializeField] private GameObject muzzleFlashParticle;
+        [SerializeField] private Transform muzzleTransform;
+        
         private void Start()
         {
             _animator = GetComponent<Animator>();
@@ -66,6 +69,17 @@ namespace ZombieDefence.Basics
         private void ShootAnim()
         {
             _animator.Play("Singl_Shot");
+
+            ShowMuzzleFlash();
         }
+        
+        
+        
+        private void ShowMuzzleFlash()
+        {
+            var muzzle = Instantiate(muzzleFlashParticle, muzzleTransform, false);
+            muzzle.SetActive(true);
+        }
+        
     }
 }

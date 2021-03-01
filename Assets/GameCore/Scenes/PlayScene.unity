@@ -2508,6 +2508,8 @@ MonoBehaviour:
   _parent: {fileID: 0}
   _weapon: {fileID: 0}
   isReload: 0
+  muzzleFlashParticle: {fileID: 0}
+  muzzleTransform: {fileID: 0}
 --- !u!4 &328148016
 Transform:
   m_ObjectHideFlags: 0

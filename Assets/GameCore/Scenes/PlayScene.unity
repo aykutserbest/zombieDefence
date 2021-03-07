@@ -4334,7 +4334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &501462144
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12251,6 +12251,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1416871030}
     - target: {fileID: 1163532094330173363, guid: 6fa9afa6bfb06014886dd2024fb0d3df, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163532094330173363, guid: 6fa9afa6bfb06014886dd2024fb0d3df, type: 3}
       propertyPath: m_StoppingDistance
       value: 2
       objectReference: {fileID: 0}
@@ -12655,6 +12659,10 @@ PrefabInstance:
     - target: {fileID: 1163532094330173362, guid: 6fa9afa6bfb06014886dd2024fb0d3df, type: 3}
       propertyPath: target
       value: 
+      objectReference: {fileID: 1416871030}
+    - target: {fileID: 1163532094330173363, guid: 6fa9afa6bfb06014886dd2024fb0d3df, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1163532094330173363, guid: 6fa9afa6bfb06014886dd2024fb0d3df, type: 3}
       propertyPath: m_StoppingDistance
@@ -13514,7 +13522,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1545858801
 Transform:
   m_ObjectHideFlags: 0
@@ -18603,6 +18611,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1416871030}
+    - target: {fileID: 1163532094330173363, guid: 6fa9afa6bfb06014886dd2024fb0d3df, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1163532094330173363, guid: 6fa9afa6bfb06014886dd2024fb0d3df, type: 3}
       propertyPath: m_StoppingDistance
       value: 2

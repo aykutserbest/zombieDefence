@@ -44,9 +44,9 @@ namespace ZombieDefence.Basics
                         var rigTag = rig.tag;
                         if (rigTag=="Enemy")
                         {
-                            rig.GetComponent<MeshRenderer>().material = hitMaterial;
-                            rig.AddForceAtPosition(ray.direction * 50f, hitInfo.point,ForceMode.VelocityChange);
-                            _parent.transform.LookAt(hitInfo.point);
+                            rig.GetComponent<Zombie>().ZombieHitReaction();
+                           // rig.AddForceAtPosition(ray.direction * 50f, hitInfo.point,ForceMode.VelocityChange);
+                           _parent.transform.LookAt(hitInfo.point);
                         }
                         else
                         {

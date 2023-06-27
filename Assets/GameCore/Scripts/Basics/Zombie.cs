@@ -6,9 +6,18 @@ public class Zombie : MonoBehaviour
 {
     private Animator zombieAnimator;
     public int Health;
+    public bool hitTake;
+
     void Start()
     {
+        EventManager.OnZombieHitReactionFinished += EventManagerOnOnZombieHitReactionFinished;
         zombieAnimator= gameObject.GetComponent<Animator>();
+       
+    }
+
+    private void EventManagerOnOnZombieHitReactionFinished()
+    {
+        hitTake = false;
     }
 
     // Update is called once per frame
@@ -19,14 +28,21 @@ public class Zombie : MonoBehaviour
 
     public void ZombieHitReaction()
     {
-        //animasyon çalışıcak
+        // yürürken hit yememe ddurması lazım
+        //ard arda hit yeme olayı (belki anim oynanır)
         //hp düsücek
         //hp yoksa ölücek
         
+        Debug.Log("vuruldu");
+
+        if (hitTake)
+        {
+            return;
+        }
+
+        hitTake = true;
         zombieAnimator.SetTrigger("HitTake");
-        
-        
-        
+         
         
     }
 }

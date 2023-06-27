@@ -40,6 +40,11 @@ namespace ZombieDefence.Basics
                     var rig = hitInfo.collider.GetComponent<Rigidbody>();
                     if (rig != null)
                     {
+                        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                        cube.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+                        
+                        Instantiate(cube, hitInfo.point , Quaternion.FromToRotation(Vector3.forward, hitInfo.normal));
+                        
                         
                         var rigTag = rig.tag;
                         if (rigTag=="Enemy")
